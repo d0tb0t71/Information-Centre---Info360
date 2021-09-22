@@ -1,7 +1,9 @@
 package com.example.informationcentre;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Notification;
 import android.os.Bundle;
 
 public class AskForHelp extends AppCompatActivity {
@@ -10,5 +12,10 @@ public class AskForHelp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ask_for_help);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Ask For Help");
+
+
     }
 }

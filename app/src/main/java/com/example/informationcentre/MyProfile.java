@@ -1,5 +1,6 @@
 package com.example.informationcentre;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -10,5 +11,8 @@ public class MyProfile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("My Profile");
     }
 }
