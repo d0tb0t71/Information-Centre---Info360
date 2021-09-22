@@ -12,59 +12,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:background="@color/black"
         >
 
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="15dp"
+            android:layout_height="match_parent"
             app:cardBackgroundColor="@color/themeColor"
-            >
+            app:cardCornerRadius="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:padding="5dp"
-                >
+                android:weightSum="4"
+                android:padding="5dp">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/emergencyservices"
-                android:scaleType="fitXY"
-                android:layout_margin="5dp"
-                />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="120dp"
-                android:src="@drawable/review"
-                android:scaleType="fitXY"
-                android:layout_margin="5dp"
-                />
                 <ImageView
+                    android:id="@+id/emergency_services"
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:src="@drawable/review"
-                    android:scaleType="fitXY"
+                    android:layout_height="130dp"
                     android:layout_margin="5dp"
-                    />
+                    android:scaleType="fitXY"
+                    android:src="@drawable/emergencyservices" />
+                <ImageView
+                    android:id="@+id/review"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/review" />
+
+                <ImageView
+                    android:id="@+id/ask_for_help"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/askforhelp" />
+
+                <ImageView
+                    android:id="@+id/my_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/myprofile" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Log Out"
-            android:backgroundTint="#FF0000"
-            android:layout_gravity="center"
-            />
     </LinearLayout>
-
-
 
 
 </ScrollView>
