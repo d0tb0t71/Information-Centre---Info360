@@ -1,16 +1,12 @@
 package com.example.informationcentre;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.Notification;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,50 +16,53 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-public class AskForHelp extends AppCompatActivity {
+public class ListRecycler extends AppCompatActivity {
 
+    TextView passed_txt;
     RecyclerView recyclerView;
-    Button ask_btn;
 
-    AdapterHelp adapterHelp;
-    ArrayList<ModelHelp> list;
+    AdapterContact adapterContact;
+    ArrayList<ModelContact> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ask_for_help);
+        setContentView(R.layout.activity_list_recycler);
 
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Ask For Help");
+        String Category = getIntent().getStringExtra("category");
 
-
-
-
-        recyclerView = findViewById(R.id.recyclerView);
-        ask_btn = findViewById(R.id.ask_btn);
+        getSupportActionBar().setTitle(Category);
 
 
-        LinearLayoutManager layoutManager = new LinearLayoutManager(AskForHelp.this);
+        passed_txt = findViewById(R.id.passed_txt);
+
+
+
+
+        recyclerView  = findViewById(R.id.recycler_view);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(ListRecycler.this);
         layoutManager.setReverseLayout(true);
         layoutManager.setStackFromEnd(true);
         recyclerView.setLayoutManager(layoutManager);
 
         list = new ArrayList<>();
 
-        adapterHelp = new AdapterHelp(this,list);
-        recyclerView.setAdapter(adapterHelp);
+        adapterContact = new AdapterContact(this,list);
+        recyclerView.setAdapter(adapterContact);
 
-        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Need Help");
+        DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference(Category);
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
-                    ModelHelp modelHelp = dataSnapshot.getValue(ModelHelp.class);
+                    ModelContact modelContact = dataSnapshot.getValue(ModelContact.class);
 
-                    list.add(modelHelp);
+                    list.add(modelContact);
                 }
-                adapterHelp.notifyDataSetChanged();
+
+                adapterContact.notifyDataSetChanged();
+
             }
 
             @Override
@@ -77,16 +76,7 @@ public class AskForHelp extends AppCompatActivity {
 
 
 
-
-
-        ask_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(getApplicationContext(),AskNow.class));
-
-            }
-        });
+        passed_txt.setText(Category);
 
 
 

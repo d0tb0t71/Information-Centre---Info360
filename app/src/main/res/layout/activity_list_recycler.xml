@@ -4,25 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".AskForHelp">
+    tools:context=".ListRecycler">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/ask_btn"
-        />
+        android:layout_height="match_parent" />
 
-    <Button
-        android:id="@+id/ask_btn"
+    <TextView
+        android:id="@+id/passed_txt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ask For Help Now"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        />
+        android:layout_centerInParent="true"
+        android:text="TXT"
+        android:textAlignment="center"
+        android:textSize="30dp" />
 
 
 

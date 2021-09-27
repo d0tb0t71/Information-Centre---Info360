@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class HomePage extends AppCompatActivity {
 
-    ImageView emergency_services,review,ask_for_help,my_profile;
+    ImageView emergency_services,ask_for_help,my_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,6 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.activity_home_page);
 
         emergency_services = findViewById(R.id.emergency_services);
-        review = findViewById(R.id.review);
         ask_for_help = findViewById(R.id.ask_for_help);
         my_profile = findViewById(R.id.my_profile);
 
@@ -25,13 +24,6 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),EmergencyServices.class));
-            }
-        });
-
-        review.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(),Review.class));
             }
         });
 

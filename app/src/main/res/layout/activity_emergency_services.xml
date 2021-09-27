@@ -13,35 +13,48 @@
         android:orientation="vertical"
         android:layout_gravity="center"
         >
+        <ImageView
+            android:id="@+id/add_your_name"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/add_number"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            />
 
         <ImageView
+            android:id="@+id/ambulance"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/button_ambulance"
+            android:layout_height="100dp"
+            android:src="@drawable/ambulance"
             android:padding="10dp"
             />
         <ImageView
+            android:id="@+id/hospital"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/button_hospital"
+            android:layout_height="100dp"
+            android:src="@drawable/hospital"
             android:padding="10dp"
             />
         <ImageView
+            android:id="@+id/pharmachy"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/button_pharmacy"
+            android:layout_height="100dp"
+            android:src="@drawable/pharmacy"
             android:padding="10dp"
             />
         <ImageView
+            android:id="@+id/police"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/button_police"
+            android:layout_height="100dp"
+            android:src="@drawable/police"
             android:padding="10dp"
             />
         <ImageView
+            android:id="@+id/delivery"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/button_delivery_service"
+            android:layout_height="100dp"
+            android:src="@drawable/delivery"
             android:padding="10dp"
             />
 

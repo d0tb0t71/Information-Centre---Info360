@@ -34,14 +34,7 @@
                     android:layout_height="120dp"
                     android:layout_margin="5dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/emergencyservices" />
-                <ImageView
-                    android:id="@+id/review"
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:layout_margin="5dp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/review" />
+                    android:src="@drawable/emergency_services" />
 
                 <ImageView
                     android:id="@+id/ask_for_help"
@@ -49,7 +42,7 @@
                     android:layout_height="130dp"
                     android:layout_margin="5dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/askforhelp" />
+                    android:src="@drawable/need_help" />
 
                 <ImageView
                     android:id="@+id/my_profile"
@@ -57,7 +50,7 @@
                     android:layout_height="130dp"
                     android:layout_margin="5dp"
                     android:scaleType="fitXY"
-                    android:src="@drawable/myprofile" />
+                    android:src="@drawable/my_profile" />
 
             </LinearLayout>
 

@@ -3,14 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_ask_for_help.xml" value="0.5" />
-        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_emergency_services.xml" value="0.33" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_add_your_number.xml" value="0.33" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_ask_for_help.xml" value="0.25" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_ask_now.xml" value="0.33" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_ask_now2.xml" value="0.17962962962962964" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_emergency_services.xml" value="0.16" />
         <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_home_page.xml" value="0.22" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_list_recycler.xml" value="0.22" />
         <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_login_page.xml" value="0.1" />
         <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_my_profile.xml" value="0.33" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_my_profile.xml" value="0.22" />
         <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_register_page.xml" value="0.25" />
         <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/activity_review.xml" value="0.25" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/contact_sample_view.xml" value="0.22" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/help_sample_card.xml" value="0.2" />
+        <entry key="..\:/Users/Dipon SutraDhar/AndroidStudioProjects/InformationCentre/app/src/main/res/layout/sample_view_spinner.xml" value="0.1" />
       </map>
     </option>
   </component>

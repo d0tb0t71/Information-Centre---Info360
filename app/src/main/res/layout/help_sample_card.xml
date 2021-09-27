@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/teal_200"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/help_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/help_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="M O B I L E"
+        android:layout_below="@id/help_name"
+
+        />
+
+    <TextView
+        android:id="@+id/help_mssg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="H E L P   T E X T H E R E"
+        android:layout_below="@id/help_mobile"
+        android:padding="20dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/call_help"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:background="#1D7598"
+        android:src="@drawable/ic_baseline_call_24" />
+
+
+
+
+
+</RelativeLayout>

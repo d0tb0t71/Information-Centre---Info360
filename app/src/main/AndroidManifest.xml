@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.informationcentre">
+    package="com.example.informationcentre" >
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -8,15 +10,21 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.InformationCentre">
+        android:theme="@style/Theme.InformationCentre" >
+        <activity
+            android:name=".AskNow"
+            android:exported="true" />
+        <activity
+            android:name=".AddYourNumber"
+            android:exported="true" />
+        <activity
+            android:name=".ListRecycler"
+            android:exported="true" />
         <activity
             android:name=".MyProfile"
             android:exported="true" />
         <activity
             android:name=".AskForHelp"
-            android:exported="true" />
-        <activity
-            android:name=".Review"
             android:exported="true" />
         <activity
             android:name=".EmergencyServices"
@@ -29,7 +37,7 @@
             android:exported="true" />
         <activity
             android:name=".LoginPage"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
