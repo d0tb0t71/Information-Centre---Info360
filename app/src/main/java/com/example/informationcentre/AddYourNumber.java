@@ -30,7 +30,6 @@ public class AddYourNumber extends AppCompatActivity {
 
     String[] category;
     Spinner spinner;
-    TextView txt;
     Button add_btn;
     EditText add_mobile,add_name;
 
@@ -43,7 +42,6 @@ public class AddYourNumber extends AppCompatActivity {
         category = getResources().getStringArray(R.array.category);
 
         spinner = findViewById(R.id.spinnerID);
-        txt = findViewById(R.id.txt);
         add_btn = findViewById(R.id.add_btn);
         add_mobile=findViewById(R.id.add_mobile);
         add_name= findViewById(R.id.add_name);
@@ -89,7 +87,6 @@ public class AddYourNumber extends AppCompatActivity {
                     finish();
 
                 }
-
 
             }
         });

@@ -18,7 +18,6 @@ import java.util.ArrayList;
 
 public class ListRecycler extends AppCompatActivity {
 
-    TextView passed_txt;
     RecyclerView recyclerView;
 
     AdapterContact adapterContact;
@@ -34,7 +33,7 @@ public class ListRecycler extends AppCompatActivity {
         getSupportActionBar().setTitle(Category);
 
 
-        passed_txt = findViewById(R.id.passed_txt);
+
 
 
 
@@ -73,10 +72,7 @@ public class ListRecycler extends AppCompatActivity {
 
 
 
-
-
-
-        passed_txt.setText(Category);
+        
 
 
 

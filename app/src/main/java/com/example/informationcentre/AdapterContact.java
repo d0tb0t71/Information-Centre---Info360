@@ -45,7 +45,7 @@ public class AdapterContact extends RecyclerView.Adapter<AdapterContact.MyViewHo
         holder.call_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 String number= modelContact.getMobile();
                 callIntent.setData(Uri.parse("tel:" + number));
                 context.startActivity(callIntent);
