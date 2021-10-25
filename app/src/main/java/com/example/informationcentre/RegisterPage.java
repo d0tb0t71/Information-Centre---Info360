@@ -2,6 +2,7 @@ package com.example.informationcentre;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -70,6 +71,7 @@ public class RegisterPage extends AppCompatActivity {
 
                             String uid= user.getUid();
 
+
                             HashMap<Object ,String> hashMap = new HashMap<>();
 
                             hashMap.put("email",email);
@@ -81,6 +83,7 @@ public class RegisterPage extends AppCompatActivity {
                             FirebaseDatabase database=FirebaseDatabase.getInstance();
                             DatabaseReference reference=database.getReference("Users");
                             reference.child(uid).setValue(hashMap);
+
 
                             Toast.makeText(getApplicationContext(), "User Registered Successfully", Toast.LENGTH_SHORT).show();
 
@@ -107,6 +110,8 @@ public class RegisterPage extends AppCompatActivity {
 
             }
         });
+
+
 
 
 

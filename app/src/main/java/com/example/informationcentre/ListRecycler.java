@@ -34,10 +34,6 @@ public class ListRecycler extends AppCompatActivity {
 
 
 
-
-
-
-
         recyclerView  = findViewById(R.id.recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(ListRecycler.this);
         layoutManager.setReverseLayout(true);

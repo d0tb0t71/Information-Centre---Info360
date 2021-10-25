@@ -54,10 +54,10 @@ public class MyProfile extends AppCompatActivity {
                         String Mobile = ""+dataSnapshot.child("phone").getValue();
                         String Address = ""+dataSnapshot.child("address").getValue();
                         String Email = ""+dataSnapshot.child("email").getValue();
-                        user_name.setText(Name);
-                        mobile.setText(Mobile);
-                        user_address.setText(Address);
-                        user_email.setText(Email);
+                        user_name.setText("Name : "+Name);
+                        mobile.setText("Mobile : "+Mobile);
+                        user_address.setText("Address : "+Address);
+                        user_email.setText("Email : "+Email);
 
 
                     }

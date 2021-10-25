@@ -70,7 +70,6 @@ public class AddYourNumber extends AppCompatActivity {
                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                     String userID = user.getUid();
 
-
                     hashMap.put("addedBy", userID);
                     hashMap.put("name", Name);
                     hashMap.put("mobile", Mobile);
@@ -80,12 +79,10 @@ public class AddYourNumber extends AppCompatActivity {
 
                     reference.push().setValue(hashMap);
 
-
                     Toast.makeText(getApplicationContext(), "Number Added", Toast.LENGTH_SHORT).show();
 
                     startActivity(new Intent(getApplicationContext(),EmergencyServices.class));
                     finish();
-
                 }
 
             }

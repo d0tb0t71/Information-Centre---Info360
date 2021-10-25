@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="@color/teal_200"
+    android:background="@color/themeColor"
     android:padding="10dp"
     android:orientation="vertical"
     >
@@ -14,25 +14,30 @@
         android:layout_height="wrap_content"
         android:text="Name"
         android:textSize="20dp"
+        android:textColor="@color/white"
         android:textStyle="bold" />
+
     <TextView
         android:id="@+id/help_mobile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:text="M O B I L E"
         android:layout_below="@id/help_name"
+        android:text="M O B I L E"
+        android:textColor="@color/white"
+        android:textSize="15dp"
 
         />
 
     <TextView
         android:id="@+id/help_mssg"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
-        android:text="H E L P   T E X T H E R E"
         android:layout_below="@id/help_mobile"
         android:padding="20dp"
+        android:text="H E L P   T E X T H E R E"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        android:background="@drawable/background1"
 
         />
 

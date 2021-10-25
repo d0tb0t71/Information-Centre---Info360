@@ -33,10 +33,12 @@ public class LoginPage extends AppCompatActivity {
         login_to_register=findViewById(R.id.login_to_register);
         forgot_password=findViewById(R.id.forgot_password);
 
-        login_btn=findViewById(R.id.login_btn);
+        login_btn = findViewById(R.id.login_btn);
 
         login_email=findViewById(R.id.login_email);
         login_password= findViewById(R.id.login_password);
+
+
 
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +63,6 @@ public class LoginPage extends AppCompatActivity {
                 });
 
 
-                Toast.makeText(getApplicationContext(), "Login Now", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -75,7 +76,7 @@ public class LoginPage extends AppCompatActivity {
         login_to_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginPage.this,RegisterPage.class));
+                startActivity(new Intent(getApplicationContext(),RegisterPage.class));
             }
         });
     }

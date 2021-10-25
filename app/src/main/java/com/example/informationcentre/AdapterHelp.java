@@ -44,7 +44,7 @@ public class AdapterHelp extends RecyclerView.Adapter<AdapterHelp.MyViewHolder> 
         holder.call_help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                Intent callIntent = new Intent(Intent.ACTION_DIAL);
                 String number= modelHelp.getMobile();
                 callIntent.setData(Uri.parse("tel:" + number));
                 context.startActivity(callIntent);
